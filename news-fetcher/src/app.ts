@@ -6,7 +6,7 @@ const app = express();
 
 app.use(express.json());
 
-app.use('/api/news', newsRoutes);
+app.use(newsRoutes);
 
 app.use(errorHandler);
 
